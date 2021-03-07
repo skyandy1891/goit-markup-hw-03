@@ -2,6 +2,8 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
+  --section-pt: 94px;
+  --section-pb: 94px;
 }
 h1,
 h2,
@@ -22,6 +24,7 @@ img {
 }
 .link {
   text-decoration: none;
+  display: inline-block;
 }
 .list {
   list-style: none;
@@ -29,9 +32,32 @@ img {
 .adress {
   font-style: normal;
 }
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.header .container {
+  align-items: center;
+  display: flex;
+}
+/* ==============COMPONENTS============== */
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px;
+  border-bottom-color: rgba(236, 236, 236, 1);
 }
 .body {
   font-family: var(--main-font);
@@ -45,6 +71,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 93px;
 }
 .main-logo:hover,
 .main-logo:focus {
@@ -53,10 +80,19 @@ img {
 .web {
   color: #2196f3;
 }
-/* ======navigation====== */
+/* ===============NAVIGATION=============== */
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
 .navigation-list {
   display: flex;
+  align-items: center;
 }
+.contact-list {
+  display: flex;
+  align-items: center;
+}
+
 .navigation-link {
   font-family: var(--main-font);
   font-weight: 500;
@@ -69,6 +105,10 @@ img {
 .navigation-link:focus {
   color: var(--accent-color);
 }
+.contact-list {
+  margin-left: auto;
+}
+
 .tel-link {
   font-family: var(--main-font);
   font-weight: 500;
@@ -88,22 +128,46 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-right: 50px;
 }
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
 }
-/* ========hero======== */
+/* =================HERO================= */
+.section {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+  margin: 0 auto;
+}
 .modal-btn {
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   cursor: pointer;
-  width: 200px;
+  min-width: 200px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 .modal-btn:hover,
 .modal-btn:focus {
+  color: #ffffff;
+  background: var(--accent-color);
+}
+.portfolio-btn {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  display: block;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   color: #ffffff;
   background: var(--accent-color);
 }
@@ -117,14 +181,23 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   width: 696px;
+  height: 120px;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 280px;
 }
 .hero {
   background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-/* ======about====== */
+/* ================ABOUT================ */
+
+.about-list {
+  display: flex;
+}
+.about-list-item {
+  width: 270px;
+  height: 101px;
+}
 .about-title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -133,6 +206,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-bottom: 10px;
 }
 .description {
   font-family: var(--main-font);
@@ -159,7 +233,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/* ======деятельность====== */
+/* =============ДЕЯТЕЛЬНОСТЬ============= */
 
 .title {
   font-family: var(--main-font);
@@ -169,10 +243,23 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
-/* ======team====== */
+/* =================TEAM================= */
+.team {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+  background-color: #f5f4fa;
+}
 .team-list {
-  background: #f5f4fa;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.team-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .name {
   font-family: var(--main-font);
@@ -192,7 +279,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/* =======footer======= */
+/* ================FOOTER================ */
 .footer {
   background: #2f303a;
   padding-top: 60px;
