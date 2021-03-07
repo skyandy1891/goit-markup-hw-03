@@ -171,8 +171,10 @@ img {
   color: #ffffff;
   background: var(--accent-color);
 }
+
 .buttons {
   display: flex;
+  justify-content: center;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -180,15 +182,8 @@ img {
 .buttons-item {
   display: flex;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 34px;
-}
-.section-btn button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  padding: 6px 22px;
-  border-radius: 4px;
+  margin-top: 94px;
+  margin-bottom: 34px;
 }
 
 .hero-item {
