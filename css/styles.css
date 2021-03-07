@@ -178,13 +178,14 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
-
+.buttons-item:not(:last-child) {
+  margin-right: 8px;
+}
 .buttons-item {
   display: flex;
   text-align: center;
   margin-top: 94px;
   margin-bottom: 34px;
-  margin-right: 8px;
 }
 
 .hero-item {
