@@ -178,10 +178,19 @@ img {
 }
 
 .buttons-item {
-  flex-basis: calc(100% / 5 - 8px);
-
-  margin-right: -30px;
+  display: flex;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 34px;
 }
+.section-btn button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
 .hero-item {
   font-family: var(--main-font);
   font-weight: 900;
