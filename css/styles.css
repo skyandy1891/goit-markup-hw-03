@@ -144,14 +144,15 @@ img {
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 16px;
+  color: #ffffff;
   line-height: 1.87;
   cursor: pointer;
   min-width: 200px;
   display: block;
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   padding: 10px 32px;
+  background-color: #2196f3;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -181,7 +182,7 @@ img {
 .buttons-item:not(:last-child) {
   margin-right: 8px;
 }
-.buttons-item {
+.buttons-item :not(:last-child) {
   display: flex;
   text-align: center;
   margin-top: 94px;
@@ -254,6 +255,7 @@ img {
   margin-top: 30px;
   border-bottom: 1px;
   border-bottom-color: rgba(238, 238, 238, 1);
+  background-color: #fff;
 }
 .project-name {
   font-family: var(--main-font);
