@@ -215,6 +215,8 @@ img {
 }
 .card-name {
   margin-left: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .about-list {
   display: flex;
@@ -252,10 +254,9 @@ img {
   margin-top: -30px;
 }
 .project-list-item {
-  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  border: 1px solid rgba(238, 238, 238, 1);
+  flex-basis: calc(100% / 3 - 30px);
 }
 .project-name {
   font-family: var(--main-font);
