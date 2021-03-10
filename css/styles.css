@@ -210,11 +210,11 @@ img {
   padding-bottom: 200px;
 }
 /* ================ABOUT================ */
-.card-img {
-  margin-bottom: 20px;
-}
+
 .card-name {
-  margin-left: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
